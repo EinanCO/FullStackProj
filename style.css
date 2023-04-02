@@ -36,6 +36,8 @@ input {
     background-color: #2691d9;
     color: white;
     font-weight: bold;
+    width: 250px;
+    height: 50px;
     text-transform: uppercase
 
 }
