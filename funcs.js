@@ -6,7 +6,6 @@ function checkLogin() {
     var upperCaseLetters= /[A-Z]/g;
     var digit = /[0-9]/g;
     var specialLetters= /[!@#$%^&*()+=_-]/g;
-    // do specialletters2 with the rest of the special letters
 
     if (!uname.includes("@"))
         errors.push("incorrect email address");
