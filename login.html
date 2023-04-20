@@ -13,14 +13,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-
-
-
   <script src="funcs.js"></script>
 </head>
 
 <body>
-  <div class="Login container">
+  <div class="Main container" style="width: 60vh;">
     <h2>Log In to Your Account</h2>
     <form>
       <div style="display:flex; margin-block: 20px;">
@@ -41,10 +38,10 @@
         <a href="#">Forgot password?</a>
       </div>
       <div>
-        <button class="submit" onclick="checkLogin()">Log in</button>
+        <button type="button" class="btn btn-primary btn-block mb-4 submit" onclick="checkLogin()">Log in</button>
       </div>
       <div class="signup_link">
-        Need an account? <a href="#">Signup</a>
+        Need an account? <a href="signup.html">Signup</a>
       </div>
     </form>
   </div>
