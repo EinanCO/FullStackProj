@@ -24,7 +24,23 @@ function checkLogin() {
 
     errors.forEach((err) => alert(err));
     if (errors.length == 0) {
-        alert(uname + "\n" + pass);
+        //alert(uname + "\n" + pass);
+        var json = {
+            'user': uname,
+              'password': pass
+          }
+        $.ajax({
+            url: "/test_data_transfer",
+            type: "POST",
+            data: json,
+            success: function (response) {
+                // $("#resbox").append("<br>");
+                // $("#resbox").append(response);
+            },
+            error: function (xhr, status, errmsg) {  // XHR - XMLHttpRequest  
+                alert(errmsg + "  " + status);
+            }
+        });
         return true;
     }
     return false;
