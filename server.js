@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
 // Define a User model
 const User = mongoose.model('User', userSchema);
 
-// Read all files in the 'api' folder
+// Read all files in the 'api' folderr
 fs.readdirSync('./api').forEach(file => {
   // Exclude non-JavaScript files and index.js
   if (file.endsWith('.js') && file !== 'index.js') {
